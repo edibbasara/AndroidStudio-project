@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+        <LinearLayout
+            android:id="@+id/col1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:id="@+id/lblDatumRac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Datum:" />
+
+
+
+            <TextView
+                android:id="@+id/lblPopustRac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Popust:"
+                />
+
+    </LinearLayout>
+    <LinearLayout
+            android:id="@+id/col2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/lblIznosBezPDVRac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bez PDV-a:"
+            />
+
+            <TextView
+                android:id="@+id/lblPDVRac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PDV:"
+                />
+        <TextView
+            android:id="@+id/lblIznosUkupnoRac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ukupno:"
+            />
+        </LinearLayout>
+</LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

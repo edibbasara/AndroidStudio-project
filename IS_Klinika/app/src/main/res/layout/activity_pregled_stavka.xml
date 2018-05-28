@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/lblPacijent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Pacijent"/>
+
+        <TextView
+            android:id="@+id/lblZaposlenik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="Zaposlenik"/>
+
+        <TextView
+            android:id="@+id/lblDatum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Datum: "
+            android:layout_below="@id/lblPacijent"/>
+
+        <TextView
+            android:id="@+id/lblTermin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Termin: "
+            android:layout_below="@id/lblZaposlenik"
+            android:layout_alignParentRight="true"/>
+
+        <CheckBox
+            android:id="@+id/cbxZavrsen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Završen"
+            android:layout_alignParentRight="true"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_below="@id/lblTermin"/>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

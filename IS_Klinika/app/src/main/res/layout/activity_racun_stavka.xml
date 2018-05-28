@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/lblRacStavka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:text="Stavka računa:"
+        android:textColor="@color/colorAccent"/>
+
+    <LinearLayout
+        android:id="@+id/col1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentLeft="true"
+        android:layout_weight="1"
+        android:layout_below="@id/lblRacStavka"
+        >
+
+        <TextView
+            android:id="@+id/lblProizvod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Naziv:"/>
+        <TextView
+            android:id="@+id/lblCijena"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cijena:"/>
+
+        <TextView
+            android:id="@+id/lblKolicina"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kolicina:"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/col2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_below="@id/lblRacStavka"
+        android:layout_alignParentRight="true">
+
+        <TextView
+            android:id="@+id/lblIznosBezPDV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bez PDV-a:"/>
+
+        <TextView
+            android:id="@+id/lblPDV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PDV:"/>
+
+        <TextView
+            android:id="@+id/lblIznosSaPDV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IznosSaPDV:"/>
+
+    </LinearLayout>
+</RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
